@@ -1,11 +1,11 @@
-from google.adk import Agent
+from google.adk.agents.llm_agent import Agent
 from .calorie_agent.agent import calorie_agent
 from .recipe_agent.agent import recipe_agent
 from .step_agent.agent import step_agent
 
 root_agent = Agent(
     name="health_root_agent",
-    model="gemini-2.5-flash",
+    model="gemini-flash-latest",
     instruction="""
 You are a friendly Health Coach orchestrator.
 

@@ -27,3 +27,8 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+
+# ADK (Agent Development Kit)
+.adk/
+*.db
+session.db

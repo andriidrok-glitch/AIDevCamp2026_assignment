@@ -1,4 +1,5 @@
 import os
+import sys
 from google.adk import Agent
 from google.adk.tools.mcp_tool.mcp_toolset import McpToolset
 from google.adk.tools.mcp_tool.mcp_session_manager import (
@@ -15,7 +16,7 @@ server_path = os.path.join(
 health_tools = McpToolset(
     connection_params=StdioConnectionParams(
         server_params=StdioServerParameters(
-            command="python",
+            command=sys.executable,
             args=[server_path],
         )
     )
@@ -23,7 +24,7 @@ health_tools = McpToolset(
 
 recipe_agent = Agent(
     name="recipe_agent",
-    model="gemini-2.5-flash",
+    model="gemini-flash-latest",
     instruction="""
 You are a cooking assistant.
 
