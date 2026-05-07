@@ -1,4 +1,4 @@
-# School Agent Platform 🏫
+# AI Dev Camp 2026: Multi-Agent Assignment Platform 🚀
 
 A powerful, multi-agent educational platform built using **Google ADK**. The system uses an **Agent-to-Agent (A2A)** architecture where a central Root Agent (the Principal) orchestrates specialized subject teachers.
 
